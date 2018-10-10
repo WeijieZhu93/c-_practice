@@ -46,7 +46,7 @@ namespace heap_sort {
         build_heap(a, len);
         for (int i = len; i > 1; i--) {
             swap(a, 1, i);
-            build_heap(a, i - 1);
+            modify(a, i - 1, 1);
         }
     }
 }
